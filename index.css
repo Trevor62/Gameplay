@@ -1,0 +1,841 @@
+html{
+scroll-behavior: smooth;
+}
+body{
+  scroll-behavior: smooth;
+}
+.component-1-child {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(13, 10, 10, 0.3);
+  width: 26.875rem;
+  height: 18.688rem;
+}
+.frame-child,
+.frame-item {
+  width: 0.944rem;
+  position: relative;
+  border-radius: 50%;
+  height: 0.944rem;
+}
+.frame-child {
+  box-shadow: 0 1.1px 1.08px rgba(0, 0, 0, 0.25);
+  background-color: #ff0a01;
+}
+.frame-item {
+  background-color: var(--color-white);
+}
+.ellipse-parent {
+  top: 15.65rem;
+  left: calc(50% - 35.5px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.806rem;
+  display: none;
+}
+.ellipse-parent,
+.group-child,
+.v {
+  position: absolute;
+ 
+}
+.group-child {
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  width: 1.888rem;
+  height: 1.713rem;
+}
+.v {
+  top: 1.219rem;
+  right: 0.956rem;
+  font-weight: 600;
+  transform: rotate(-89.8deg);
+  transform-origin: 0 0;
+  font-size: 20.5px;
+}
+.component-1-item,
+.ellipse-group {
+  position: absolute;
+  width: 1.888rem;
+  height: 1.713rem;
+}
+.ellipse-group {
+  top: 8.619rem;
+  right: 2.031rem;
+}
+.component-1-item {
+  top: 8.688rem;
+  left: 1.938rem;
+  object-fit: contain;
+}
+.component-1 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 214.5px);
+  width: 26.875rem;
+  height: 18.688rem;
+  overflow: hidden;
+  /* background-image: url(./public/component-1@3x.png); */
+  /* background-size: cover; */
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: 1.263rem;
+}
+.leaf-png-images-green-leave-icon {
+  position: absolute;
+  top: 1.375rem;
+  right: -1.656rem;
+  width: 6.531rem;
+  height: 6.513rem;
+  object-fit: contain;
+}
+.group-item {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 40.4px);
+  border-radius: 2.14px;
+  background-color: var(--color-darkgoldenrod);
+  width: 5.05rem;
+  height: 1.125rem;
+}
+.no-1-tasty {
+  position: absolute;
+  top: 0.288rem;
+  left: calc(50% - 33.1px);
+  font-weight: 800;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 30.525rem;
+  left: calc(50% - 39.5px);
+  width: 5.05rem;
+  height: 1.125rem;
+  font-size: var(--font-size-5xs-4);
+  color: var(--color-white);
+}
+.choose-enjoy {
+  position: absolute;
+  top: 31.744rem;
+  left: calc(50% - 74.5px);
+  font-size: var(--font-size-base-8);
+  font-weight: 800;
+}
+.enjoy-a-variety {
+  position: absolute;
+  top: 33.713rem;
+  left: calc(50% - 179.5px);
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  width: 22.55rem;
+}
+.group-inner {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 40.4px);
+  border-radius: 2.14px;
+  background-color: var(--color-firebrick);
+  width: 5.05rem;
+  height: 1.431rem;
+  
+}
+.order-now {
+  position: absolute;
+  top: 0.381rem;
+  left: calc(50% - 26.1px);
+  font-weight: 800;
+}
+.rectangle-group {
+  position: absolute;
+  top: 7.088rem;
+  left: calc(50% - 122.8px);
+  width: 5.05rem;
+  height: 1.431rem;
+}
+.welcome-to {
+  position: absolute;
+  top: 0.281rem;
+  left: calc(50% - 26.4px);
+  font-weight: 800;
+}
+.amaphill-palace,
+.rectangle-container {
+  position: absolute;
+  left: calc(50% - 122.8px);
+}
+.rectangle-container {
+  top: 0;
+  width: 5.05rem;
+  height: 1.125rem;
+  font-size: var(--font-size-5xs-4);
+}
+.amaphill-palace {
+  top: 1.65rem;
+  font-size: var(--font-size-base-8);
+  font-weight: 800;
+}
+.special-offeruigudcrucgedgcbhq {
+  position: absolute;
+  top: 3.569rem;
+  left: calc(50% - 122.8px);
+  font-size: 0.406rem;
+  font-weight: 600;
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 15.35rem;
+  height: 2.931rem;
+}
+.group-parent {
+  position: absolute;
+  top: 7.125rem;
+  left: calc(50% - 122.5px);
+  width: 15.35rem;
+  height: 8.513rem;
+  color: var(--color-white);
+}
+.android-child {
+  position: absolute;
+  top: 33.113rem;
+  left: calc(50% - 37.1px);
+  border-top: 3.2px solid #000;
+  box-sizing: border-box;
+  width: 4.713rem;
+  height: 0.2rem;
+}
+.rectangle-icon {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 186.75px);
+  width: 11.781rem;
+  height: 10.825rem;
+  object-fit: cover;
+}
+.group-child1,
+.group-child2 {
+  position: absolute;
+  left: calc(50% + 15.85px);
+  width: 10.675rem;
+  height: 5.194rem;
+  object-fit: cover;
+}
+.group-child1 {
+  top: 0;
+}
+.group-child2 {
+  top: 5.631rem;
+}
+.try-it-today,
+.try-it-today1,
+.try-it-today2 {
+  position: absolute;
+  top: 8.613rem;
+  left: calc(50% - 177.95px);
+  font-weight: 800;
+  display: inline-block;
+  width: 7.569rem;
+  text-shadow: 0 1.2px 1.18px rgba(0, 0, 0, 0.25);
+}
+.try-it-today1,
+.try-it-today2 {
+  top: 6.238rem;
+  left: calc(50% + 23.25px);
+}
+.try-it-today2 {
+  top: 0.625rem;
+}
+.group-div {
+  position: absolute;
+  top: 19.313rem;
+  left: calc(50% - 186px);
+  width: 23.344rem;
+  height: 10.825rem;
+  font-size: var(--font-size-xs-1);
+  color: var(--color-white);
+}
+.img-8981-1-icon {
+  position: absolute;
+  top: 29.638rem;
+  right: 3.794rem;
+  width: 2.613rem;
+  height: 3.844rem;
+  object-fit: contain;
+}
+.leaf-png-images-green-leave-icon1 {
+  position: absolute;
+  top: 2.563rem;
+  left: -0.562rem;
+  width: 4.594rem;
+  height: 4.525rem;
+  object-fit: contain;
+}
+.group-child3,
+.group-child4,
+.group-child5,
+.group-child6 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 214.5px);
+  width: 6.706rem;
+  height: 5.075rem;
+  object-fit: cover;
+}
+.group-child4,
+.group-child5,
+.group-child6 {
+  left: calc(50% - 107.2px);
+}
+.group-child5,
+.group-child6 {
+  left: calc(50% - 0px);
+}
+.group-child6 {
+  left: calc(50% + 107.3px);
+}
+.rectangle-parent1 {
+  position: absolute;
+  top: 57.413rem;
+  left: calc(50% - 214.5px);
+  width: 26.813rem;
+  height: 5.075rem;
+}
+.locations {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 43px);
+  font-weight: 800;
+}
+.line-div {
+  position: absolute;
+  top: 1.275rem;
+  left: calc(50% - 37.6px);
+  border-top: 2.2px solid var(--color-firebrick);
+  box-sizing: border-box;
+  width: 4.688rem;
+  height: 0.138rem;
+}
+.locations-parent {
+  position: absolute;
+  top: 63.044rem;
+  left: calc(50% - 42.2px);
+  width: 5.375rem;
+  height: 1.344rem;
+  font-size: 0.913rem;
+}
+.broadway-street-new {
+  position: absolute;
+  top: 68.313rem;
+  left: calc(50% - 33.5px);
+  font-size: 0.65rem;
+  display: inline-block;
+  width: 10.125rem;
+  height: 2.25rem;
+}
+.call-for-directions,
+.div,
+.find-us-0n {
+  position: absolute;
+  top: 70.175rem;
+  left: calc(50% - 33.3px);
+  font-size: var(--font-size-6xs-1);
+  font-weight: 600;
+  display: inline-block;
+  width: 4.325rem;
+}
+.div,
+.find-us-0n {
+  top: 70.881rem;
+  font-weight: 800;
+}
+.div {
+  top: 70.075rem;
+  left: calc(50% + 41px);
+  font-size: var(--font-size-5xs-9);
+  font-weight: 300;
+  width: 3.519rem;
+}
+.vector-icon,
+.vector-icon2 {
+  width: 0.369rem;
+  position: relative;
+  height: 0.369rem;
+}
+.vector-icon2 {
+  width: 0.419rem;
+  height: 0.344rem;
+}
+.vector-parent {
+  position: absolute;
+  top: 70.931rem;
+  left: calc(50% + 14.8px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0.387rem;
+}
+.e21b5256-fea5-400c-b139-3fceb5-icon {
+  position: absolute;
+  top: 64.556rem;
+  left: calc(50% - 47.6px);
+  width: 5.906rem;
+  height: 3.719rem;
+  object-fit: cover;
+}
+.group-child7 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 214.5px);
+  background-color: #24201f;
+  width: 26.813rem;
+}
+.restaurant-cutlery-circular-sy-icon {
+  position: absolute;
+  height: 25.44%;
+  top: 19.82%;
+  bottom: 54.74%;
+  left: calc(50% - 173.5px);
+  max-height: 100%;
+  width: 0.894rem;
+  object-fit: cover;
+}
+.span {
+  font-size: var(--font-size-5xs-9);
+}
+.edo-street-benin {
+  font-size: var(--font-size-8xs-3);
+}
+.address31-edo-street-container {
+  position: absolute;
+  height: 17.54%;
+  top: 50%;
+  left: calc(50% - 172.3px);
+  font-weight: 300;
+  display: inline-block;
+  width: 6.856rem;
+}
+.amaphill-2017 {
+  white-space: pre-wrap;
+}
+.privacy-policy {
+  text-decoration: underline;
+}
+.amaphill-2017-privacy-container {
+  position: absolute;
+  height: 31.58%;
+  top: 22.81%;
+  left: calc(50% + 45.6px);
+  font-size: var(--font-size-5xs-9);
+  font-weight: 300;
+  text-align: center;
+  display: inline-block;
+  width: 8.038rem;
+}
+.amaphill,
+.our-menue {
+  position: absolute;
+  height: 15.79%;
+  top: 28.77%;
+  left: calc(50% - 30.2px);
+  font-size: var(--font-size-5xs-2);
+  font-weight: 900;
+  display: inline-block;
+  width: 2.688rem;
+}
+.amaphill {
+  top: 30.18%;
+  left: calc(50% - 151.7px);
+  width: 3.288rem;
+}
+.burgers-parfait-rice,
+.emailinfogmailcom {
+  position: absolute;
+  height: 17.54%;
+  top: 63.16%;
+  left: calc(50% - 172.3px);
+  font-weight: 300;
+  display: inline-block;
+  width: 3.519rem;
+}
+.burgers-parfait-rice {
+  height: 21.05%;
+  top: 56.67%;
+  left: calc(50% - 45.6px);
+  font-size: 0.213rem;
+  text-align: center;
+  width: 4.594rem;
+}
+.group-child8,
+.group-child9 {
+  position: absolute;
+  height: 51.4%;
+  top: 25.26%;
+  bottom: 23.33%;
+  left: calc(50% - 47.5px);
+  border-right: 0.3px solid var(--color-white);
+  box-sizing: border-box;
+  width: 0.019rem;
+}
+.group-child9 {
+  top: 28.6%;
+  bottom: 20%;
+  left: calc(50% + 30.7px);
+}
+.vector-icon3,
+.vector-icon5 {
+  width: 0.538rem;
+  position: relative;
+  height: 0.538rem;
+}
+.vector-icon5 {
+  width: 0.613rem;
+  height: 0.5rem;
+}
+.vector-group {
+  position: absolute;
+  height: 15.09%;
+  top: 72.46%;
+  bottom: 12.46%;
+  left: calc(50% + 92.7px);
+  width: 2.769rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0.562rem;
+}
+.rectangle-parent2 {
+  position: absolute;
+  height: 4.66%;
+  top: 95.34%;
+  bottom: 0;
+  left: calc(50% - 215.5px);
+  width: 26.813rem;
+  font-size: var(--font-size-7xs-4);
+  color: var(--color-white);
+}
+.android-item {
+  position: absolute;
+  bottom: 4.506rem;
+  left: 0.706rem;
+  border-radius: 2.96px;
+  width: 7.825rem;
+  height: 6.8rem;
+  object-fit: cover;
+}
+.restaurant-cutlery-circular-sy-icon1 {
+  position: absolute;
+  top: 0.388rem;
+  left: calc(50% - 59.1px);
+  width: 0.881rem;
+  height: 0.906rem;
+  object-fit: cover;
+}
+.vector-icon6 {
+  position: absolute;
+  top: 0.313rem;
+  left: calc(50% - 167.4px);
+  width: 1.094rem;
+  height: 0.856rem;
+}
+.bowl-of-salad-black-icon-sign- {
+  position: absolute;
+  top: 0;
+  left: calc(50% + 133.1px);
+  width: 1.644rem;
+  height: 1.831rem;
+  object-fit: cover;
+}
+.illustration-chef-hat-mustache-icon {
+  position: absolute;
+  top: 0.188rem;
+  left: calc(50% + 25.9px);
+  width: 1.4rem;
+  height: 1.45rem;
+  object-fit: cover;
+}
+.enjoy-a-variety1,
+.fresh-food {
+  position: absolute;
+  display: inline-block;
+}
+.fresh-food {
+  top: 0;
+  left: calc(50% - 31.75px);
+  font-weight: 800;
+  width: 3.938rem;
+}
+.enjoy-a-variety1 {
+  top: 1rem;
+  left: calc(50% - 36.75px);
+  font-size: var(--font-size-8xs-3);
+  font-weight: 500;
+  width: 4.594rem;
+}
+.group-child10 {
+  position: absolute;
+  top: 0.875rem;
+  left: calc(50% - 17.75px);
+  border-top: 1.6px solid var(--color-firebrick);
+  box-sizing: border-box;
+  width: 2.3rem;
+  height: 0.1rem;
+}
+.fresh-food-parent {
+  position: absolute;
+  top: 1.75rem;
+  left: calc(50% - 91.5px);
+  width: 4.594rem;
+  height: 2.25rem;
+}
+.enjoy-a-variety2,
+.fast-delivery {
+  position: absolute;
+  display: inline-block;
+}
+.fast-delivery {
+  top: 0;
+  left: calc(50% - 36.65px);
+  font-weight: 800;
+  width: 4.625rem;
+}
+.enjoy-a-variety2 {
+  top: 1rem;
+  left: calc(50% - 38.65px);
+  font-size: var(--font-size-8xs-3);
+  font-weight: 500;
+  width: 4.831rem;
+}
+.group-child11 {
+  position: absolute;
+  top: 0.875rem;
+  left: calc(50% - 17.65px);
+  border-top: 1.6px solid var(--color-firebrick);
+  box-sizing: border-box;
+  width: 2.3rem;
+  height: 0.1rem;
+}
+.fast-delivery-parent {
+  position: absolute;
+  top: 1.75rem;
+  left: calc(50% - 189.5px);
+  width: 4.831rem;
+  height: 2.25rem;
+}
+.enjoy-a-variety3,
+.experienced-chef {
+  position: absolute;
+  display: inline-block;
+}
+.experienced-chef {
+  top: 0;
+  left: calc(50% - 46.5px);
+  font-weight: 800;
+  width: 5.813rem;
+}
+.enjoy-a-variety3 {
+  top: 1rem;
+  left: calc(50% - 35.5px);
+  font-size: var(--font-size-8xs-3);
+  font-weight: 500;
+  width: 4.469rem;
+}
+.group-child12 {
+  position: absolute;
+  top: 0.875rem;
+  left: calc(50% - 17.5px);
+  border-top: 1.6px solid var(--color-firebrick);
+  box-sizing: border-box;
+  width: 2.3rem;
+  height: 0.1rem;
+}
+.experienced-chef-parent {
+  position: absolute;
+  top: 1.75rem;
+  left: calc(50% - 6.5px);
+  width: 5.813rem;
+  height: 2.25rem;
+}
+.enjoy-a-variety4,
+.variety-of-dishes {
+  position: absolute;
+  display: inline-block;
+}
+.variety-of-dishes {
+  top: 0;
+  left: calc(50% - 43.5px);
+  font-weight: 800;
+  width: 5.438rem;
+  height: 1.063rem;
+}
+.enjoy-a-variety4 {
+  top: 0.813rem;
+  left: calc(50% - 39.5px);
+  font-size: var(--font-size-8xs-3);
+  font-weight: 500;
+  width: 4.688rem;
+}
+.group-child13 {
+  position: absolute;
+  top: 0.688rem;
+  left: calc(50% - 17.5px);
+  border-top: 1.6px solid var(--color-firebrick);
+  box-sizing: border-box;
+  width: 2.3rem;
+  height: 0.1rem;
+}
+.variety-of-dishes-parent {
+  position: absolute;
+  top: 1.938rem;
+  left: calc(50% + 102.5px);
+  width: 5.438rem;
+  height: 2.063rem;
+}
+.restaurant-cutlery-circular-sy-parent {
+  position: absolute;
+  top: 53.313rem;
+  left: calc(50% - 188.5px);
+  width: 23.688rem;
+  height: 4rem;
+  text-align: center;
+  font-size: var(--font-size-4xs-5);
+}
+.amaphill-palace1 {
+  position: absolute;
+  top: 0.563rem;
+  left: calc(50% - 76.5px);
+  display: inline-block;
+  width: 9.625rem;
+}
+.subtract-icon {
+  position: relative;
+  border-radius: 7px;
+  width: 26.563rem;
+  height: 18.563rem;
+  width: 500px;
+  height: 18.563rem;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.order-enjoy {
+  position: absolute;
+  top: 7.688rem;
+  left: calc(50% - 170.5px);
+  font-size: 2.069rem;
+  font-weight: 800;
+  color: var(--color-white);
+  display: inline-block;
+  width: 21.375rem;
+}
+.group-child14 {
+  position: absolute;
+  top: 10.375rem;
+  left: calc(50% - 111.5px);
+  border-top: 4px solid var(--color-white);
+  box-sizing: border-box;
+  width: 13.963rem;
+  height: 0.25rem;
+}
+.amaphill-palace-parent {
+  position: absolute;
+  top: 34.75rem;
+  left: calc(50% - 211.5px);
+  width: 26.563rem;
+  height: 18.563rem;
+  text-align: center;
+  font-size: 0.781rem;
+}
+.group-child15 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 215.5px);
+  background-color: var(--color-white);
+  width: 26.938rem;
+  height: 1.763rem;
+  z-index: 100;
+}
+.home,
+.locate-us {
+  position: relative;
+  font-weight: 800;
+}
+.locate-us {
+  white-space: pre-wrap;
+}
+.home-parent {
+  position: absolute;
+  top: 0.625rem;
+  left: calc(50% - 121.5px);
+  width: 15.25rem;
+  height: 0.544rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.593rem;
+}
+.vector-icon7 {
+  position: absolute;
+  top: 0.438rem;
+  right: 0.969rem;
+  width: 0.906rem;
+  height: 0.744rem;
+}
+.rectangle-parent3 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 215.5px);
+  width: 26.938rem;
+  height: 1.763rem;
+  font-size: var(--font-size-3xs);
+  position: fixed;
+  z-index: 100;
+}
+.restaurant-cutlery-circular-sy-icon2 {
+  position: absolute;
+  top: 0.125rem;
+  left: 0.625rem;
+  width: 1.375rem;
+  height: 1.269rem;
+  object-fit: cover;
+  position: fixed;
+  z-index: 101;
+}
+.rectangle-parent4 {
+  position: absolute;
+  top: 50.313rem;
+  left: calc(50% - 40.5px);
+  width: 5.05rem;
+  height: 1.431rem;
+  color: var(--color-white);
+}
+.android1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  overflow-y: auto;
+}
+.android {
+  width: 100%;
+  position: relative;
+  height: 76.5rem;
+  text-align: left;
+  font-size: var(--font-size-4xs-6);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}
+

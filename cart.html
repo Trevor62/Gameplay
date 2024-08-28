@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAPHILLFood Store</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-image:url('image4.jpg');
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .carousel-container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+            font-family: monospace;
+        }
+        .food-item {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .food-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .food-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ff6b6b;
+        }
+        .food-item p {
+            margin: 15px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .cart-container {
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        .cart-container h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+        .cart-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 10px;
+        }
+        .cart-item p {
+            margin: 0;
+            flex: 1;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .cart-item input {
+            width: 40px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .cart-item button {
+            padding: 8px 10px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cart-item button:hover {
+            background-color: #c0392b;
+        }
+        .cart-total {
+            text-align: right;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 30px;
+        }
+        .purchase-button,
+        .home-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.3rem;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .home-button {
+            background-color: #3498db;
+        }
+        .purchase-button:hover {
+            background-color: #27ae60;
+        }
+        .home-button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+        }
+        .payment {
+    display: relative;
+}
+.details{
+    display: relative;
+    background-color: rgb(8, 220, 228);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+.details:hover{
+    background-color: rgb(40, 133, 136);
+}
+.account{
+    display: relative;
+    text-align: center;
+}
+.payment{
+    display: relative;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.name, span, a{
+    color: black;
+    text-decoration: none;
+}
+span{
+    color: blue;
+    margin: 5px;
+}
+.bank{
+    color: #2D9CDB;
+}
+.note-cover, .note{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight:bolder;
+    padding: 5px;
+}
+.foodtray{
+    font-size:25px;
+    text-align: center;
+    color: rgb(32, 31, 31);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Courier New', Courier, monospace;">AMAPHILL PALACE</h1>
+    </header>
+
+    <div class="carousel-container">
+        <!-- Food Items in the Carousel -->
+        <div class="food-item" data-name="Pizza" data-price="10.99">
+            <img src="image1.jpg" alt="Pizza">
+            <p>Pizza - $10.99</p>
+        </div>
+        <div class="food-item" data-name="Burger" data-price="7.99">
+            <img src="image2.jpg" alt="Burger">
+            <p>Burger - $7.99</p>
+        </div>
+        <div class="food-item" data-name="Pasta" data-price="8.99">
+            <img src="image3.jpg" alt="Pasta">
+            <p>Pasta - $8.99</p>
+        </div>
+        <div class="food-item" data-name="Salad" data-price="5.99">
+            <img src="image4.jpg" alt="Salad">
+            <p>Salad - $5.99</p>
+        </div>
+        <div class="food-item" data-name="Pizza" data-price="10.99">
+            <img src="image5.jpg" alt="Pizza">
+            <p>Pizza - $10.99</p>
+        </div>
+        <div class="food-item" data-name="Burger" data-price="7.99">
+            <img src="image6.jpg" alt="Burger">
+            <p>Burger - $7.99</p>
+        </div>
+        <div class="food-item" data-name="Pasta" data-price="8.99">
+            <img src="image7.jpg" alt="Pasta">
+            <p>Pasta - $8.99</p>
+        </div>
+        <div class="food-item" data-name="Salad" data-price="5.99">
+            <img src="image8.jpg" alt="Salad">
+            <p>Salad - $5.99</p>
+        </div>
+        <div class="food-item" data-name="Pizza" data-price="10.99">
+            <img src="image9.jpg" alt="Pizza">
+            <p>Pizza - $10.99</p>
+        </div>
+        <div class="food-item" data-name="Burger" data-price="7.99">
+            <img src="image1.jpg" alt="Burger">
+            <p>Burger - $7.99</p>
+        </div>
+        <div class="food-item" data-name="Pasta" data-price="8.99">
+            <img src="image2.jpg" alt="Pasta">
+            <p>Pasta - $8.99</p>
+        </div>
+        <div class="food-item" data-name="Salad" data-price="5.99">
+            <img src="image3.jpg" alt="Salad">
+            <p>Salad - $5.99</p>
+        </div>
+        <!-- Add more food items to make up a total of 20 items -->
+    </div>
+
+    <div class="account"> <button class="details" style="font-family: 'Courier New', Courier, monospace;">GET ACCOUNT PAYMENT DETAILS</button></div>
+           
+    <div class="payment">
+    <H2 class="name" style="font-family: 'Courier New', Courier, monospace;"><span class="bank">BANK</span>:GT BANK <span>0628411995</span> AGHEDO GODSTIME</H2>
+    </div>
+    <div class="note-cover">
+    <div class="note" style="font-family: 'Courier New', Courier, monospace;">CLICK ON PURCHASE AFTER MAKING PAYMENTS</div>
+</div>
+
+    <div class="cart-container">
+        <h2 style="font-family: 'Courier New', Courier, monospace;">Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">Total: $<span id="total-price" style="font-family: 'Courier New', Courier, monospace;">0.00</span></div>
+        <button class="purchase-button" >PURCHASE</button>
+        <button class="home-button" ><a href="index.html" style=" text-decoration: none;color: WHITE;" style="font-family: 'Courier New', Courier, monospace;">HOME</a></button>
+    </div>
+
+
+
+    
+
+    <footer>
+        <p>&copy; 2024 Food Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const cartItemsContainer = document.getElementById('cart-items');
+        const totalPriceElement = document.getElementById('total-price');
+        let cart = {};
+
+        function updateCart() {
+            cartItemsContainer.innerHTML = '';
+            let totalPrice = 0;
+
+            for (const [name, item] of Object.entries(cart)) {
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="${name}">
+                    <p>${name} - $${item.price.toFixed(2)}</p>
+                    <input type="number" value="${item.quantity}" min="1">
+                    <button>&times;</button>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+
+                totalPrice += item.price * item.quantity;
+
+                const input = cartItem.querySelector('input');
+                input.addEventListener('change', (e) => {
+                    const newQuantity = parseInt(e.target.value);
+                    if (newQuantity <= 0) return;
+                    cart[name].quantity = newQuantity;
+                    updateCart();
+                });
+
+                const removeButton = cartItem.querySelector('button');
+                removeButton.addEventListener('click', () => {
+                    delete cart[name];
+                    updateCart();
+                });
+            }
+
+            totalPriceElement.textContent = totalPrice.toFixed(2);
+        }
+
+        document.querySelectorAll('.food-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.getAttribute('data-name');
+                const price = parseFloat(item.getAttribute('data-price'));
+                const image = item.querySelector('img').src;
+
+                if (cart[name]) {
+                    cart[name].quantity += 1;
+                } else {
+                    cart[name] = { name, price, image, quantity: 1 };
+                }
+
+                updateCart();
+            });
+        });
+
+        document.querySelector('.purchase-button').addEventListener('click', () => {
+            if (Object.keys(cart).length === 0) {
+                alert('Your cart is empty!');
+            } else {
+                // Format cart items into a message
+                let message = 'Order Details:\n\n';
+                for (const [name, item] of Object.entries(cart)) {
+                    message += `${item.quantity} x ${name} - $${(item.price * item.quantity).toFixed(2)}\n`;
+                }
+                const totalPrice = totalPriceElement.textContent;
+                message += `\nTotal: $${totalPrice}`;
+
+                // Encode the message for the WhatsApp URL
+                const encodedMessage = encodeURIComponent(message);
+
+                // WhatsApp URL with pre-filled message (replace PHONE_NUMBER with the actual number)
+                // const whatsappUrl = `https://api.whatsapp.com/send?phone=PHONE_NUMBER&text=${encodedMessage}`;
+                const whatsappUrl = `https://api.whatsapp.com/send?phone=2348071389363&text=${encodedMessage}`;
+
+                // Redirect to WhatsApp with the pre-filled message
+                window.open(whatsappUrl, '_blank');
+            }
+        });
+
+        // // document.querySelector('.home-button').addEventListener('click', () => {
+        // //     window.location.href = '/';
+        // });
+
+        const details = document.querySelector('.details')
+const payment = document.querySelector('.payment')
+
+details.addEventListener('click',()=>{
+    payment.style.display='block'
+ 
+})
+
+
+    </script>
+</body>
+</html>

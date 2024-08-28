@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+ 
+
+  /* font sizes */
+  --font-size-4xs-6: 0.538rem;
+  --font-size-3xs: 0.625rem;
+  --font-size-8xs-3: 0.269rem;
+  --font-size-4xs-5: 0.531rem;
+  --font-size-5xs-9: 0.494rem;
+  --font-size-7xs-4: 0.338rem;
+  --font-size-5xs-2: 0.45rem;
+  --font-size-6xs-1: 0.381rem;
+  --font-size-xs-1: 0.694rem;
+  --font-size-base-8: 1.05rem;
+  --font-size-5xs-4: 0.463rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-firebrick: #c71c16;
+  --color-gray-100: #0d0a0a;
+  --color-darkgoldenrod: #cca14b;
+
+  /* Border radiuses */
+  --br-10xs-1: 2.1px;
+}
